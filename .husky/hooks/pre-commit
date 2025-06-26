@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Executa o ESLint
+npm run lint || exit 1
+
+# Executa o Prettier
+npm run format || exit 1 

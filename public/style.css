@@ -1,0 +1,192 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #e74c3c;
+  --text-color: #ecf0f1;
+  --elevator-speed: 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.elevator-system {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 20px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Display Panel */
+.display-panel {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.floor-display {
+  font-size: 48px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.direction-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.arrow.active {
+  color: #2ecc71;
+}
+
+/* Elevator Shaft */
+.elevator-shaft {
+  background-color: var(--secondary-color);
+  height: 400px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.elevator-car {
+  width: 80px;
+  height: 80px;
+  background-color: var(--text-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom var(--elevator-speed) ease-in-out;
+  border-radius: 4px;
+}
+
+.elevator-door {
+  width: 100%;
+  height: 100%;
+  background-color: #95a5a6;
+  transition: transform 0.5s;
+}
+
+.elevator-door.open {
+  transform: scaleX(0);
+}
+
+/* Control Panel */
+.control-panel {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floor-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.floor-button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.floor-button:hover {
+  background-color: #3498db;
+}
+
+.floor-button.active {
+  background-color: #2ecc71;
+}
+
+.emergency-btn {
+  padding: 15px;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.emergency-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Queue Display */
+.queue-display {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.queue-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.queue-item {
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .elevator-system {
+    grid-template-columns: 1fr;
+  }
+
+  .elevator-shaft {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .floor-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

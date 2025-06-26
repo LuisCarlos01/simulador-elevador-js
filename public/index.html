@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Elevador</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="elevator-system">
+        <div class="display-panel">
+          <div class="floor-display">
+            <span id="currentFloor">0</span>
+          </div>
+          <div class="direction-indicator">
+            <div id="upArrow" class="arrow up">▲</div>
+            <div id="downArrow" class="arrow down">▼</div>
+          </div>
+        </div>
+
+        <div class="elevator-shaft">
+          <div class="elevator-car" id="elevatorCar">
+            <div class="elevator-door"></div>
+          </div>
+        </div>
+
+        <div class="control-panel">
+          <div class="floor-buttons" id="floorButtons">
+            <!-- Botões serão gerados via JavaScript -->
+          </div>
+          <button id="emergencyBtn" class="emergency-btn">EMERGÊNCIA</button>
+        </div>
+
+        <div class="queue-display">
+          <h3>Fila de Chamadas</h3>
+          <div id="queueList" class="queue-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
