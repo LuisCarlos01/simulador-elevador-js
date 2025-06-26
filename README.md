@@ -4,7 +4,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![MVP Version](https://img.shields.io/badge/mvp-v0.1.0-orange.svg)](https://github.com/LuisCarlos01/simulador-elevador-js/releases/tag/v0.1.0-mvp)
+[![MVP Version](https://img.shields.io/badge/mvp-v1.0.0-orange.svg)](https://github.com/LuisCarlos01/simulador-elevador-js/releases/tag/v0.1.0-mvp)
 [![Release Version](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/LuisCarlos01/simulador-elevador-js/releases/tag/v1.0.0)
 
 <p align="center">
