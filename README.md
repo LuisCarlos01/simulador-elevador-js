@@ -15,8 +15,7 @@
 
 ## 📦 Versões
 
-- **v0.1.0-mvp**: Versão inicial com funcionalidades básicas do simulador
-- **v1.0.0**: Primeira versão estável com todas as funcionalidades implementadas
+- **v1.0.0**: Versão inicial com funcionalidades básicas do simulador
 
 [Ver todas as releases](https://github.com/LuisCarlos01/simulador-elevador-js/releases)
 
