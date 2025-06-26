@@ -4,12 +4,21 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![MVP Version](https://img.shields.io/badge/mvp-v0.1.0-orange.svg)](https://github.com/LuisCarlos01/simulador-elevador-js/releases/tag/v0.1.0-mvp)
+[![Release Version](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/LuisCarlos01/simulador-elevador-js/releases/tag/v1.0.0)
 
 <p align="center">
   <img src="docs/images/preview.gif" alt="Preview do Simulador de Elevador" width="600">
 </p>
 
 > Um simulador de elevador interativo implementado com JavaScript puro, demonstrando conceitos de programação orientada a objetos, manipulação do DOM e animações CSS.
+
+## 📦 Versões
+
+- **v0.1.0-mvp**: Versão inicial com funcionalidades básicas do simulador
+- **v1.0.0**: Primeira versão estável com todas as funcionalidades implementadas
+
+[Ver todas as releases](https://github.com/LuisCarlos01/simulador-elevador-js/releases)
 
 ## ✨ Demonstração
 
